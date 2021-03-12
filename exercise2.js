@@ -6,7 +6,8 @@
                            |___/                            |___/                                                                                                          
 */
 
-// this clears the svg that Sterling provides to us
+// this clears the svg that Sterling provides to us.
+// You may want to include this at the top of all of your files!
 d3.selectAll("svg > *").remove();
 
 // grabbing Shape from instance variables

@@ -6,13 +6,14 @@
                     |_|  |_|     |__/       |___/                                                                                     
 */
 
-// this clears the svg that Sterling provides to us
+// this clears the svg that Sterling provides to us.
+// You may want to include this at the top of all of your files!
 d3.selectAll("svg > *").remove();
 
 // grabbing Shape from instance variables
 const listOfShapes = Shape.atoms(true);
 
-// declaring some constants about our rendering
+// declaring some constants for our rendering
 const start = 0;    // the position of the first rect
 const w = 50;       // the width of each rect
 const margin = 10;  // the space between each rect
