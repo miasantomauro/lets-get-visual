@@ -5,7 +5,6 @@
   (https://docs.google.com/document/d/1CGvhezOA6BD7OMtoFPKf1Ao_meDOZiOX47OKu6Y8CjA/edit?usp=sharing)
 
   Mia Santomauro Spring 2021 ISP with Tim Nelson
-  Adapted from binary_relation.rkt solution from Spring 2020
 */
 
 sig Shape {

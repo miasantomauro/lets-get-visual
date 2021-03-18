@@ -7,7 +7,6 @@
 */
 
 // this clears the svg that Sterling provides to us.
-// You may want to include this at the top of all of your files!
 d3.selectAll("svg > *").remove();
 
 // grabbing Shape from instance variables
@@ -41,25 +40,23 @@ d3.select(svg)
     .attr("width", w)   // using our width constant from above
     .attr("height", 50);
 
+// TODO: render concentric circles
 
-    
-// THIS IS A SAMPLE SOLUTION: DELETE LATER
+// TODO: You can uncomment the following block of code to display the correct order of colors
+
+/*
 d3.select(svg)
-    .selectAll("myCircle")
+    .selectAll("myColorLabel")
     .data(listOfShapes)
-    .join("circle")
-    .attr("cx", 50)
-    .attr("cy", 50)
-    .attr("r", (d, i) => {return (5 - i) * 10;})
-    .style("fill", (d, i) => {
-        const c = d.color._id;
-        if (c === "Red0") {
-            return RED;
-        } else if (c === "Blue0") {
-            return BLUE;
-        } else {
-            return GREEN;
-        }
+    .join("text")
+    .attr("x", 20)
+    .attr("y", (d, i) => {
+        return 200 + (i * 20);
+    })
+    .text((d, i) => {
+        // this line uses js string variable interpolation
+        return `Shape at index ${i} has the color ${d.color._id}`;
     });
+*/
 
 

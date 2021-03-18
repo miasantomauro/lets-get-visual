@@ -6,8 +6,7 @@
                            |___/                            |___/                                                                                                          
 */
 
-// this clears the svg that Sterling provides to us.
-// You may want to include this at the top of all of your files!
+// clearing the svg that Sterling provides to us.
 d3.selectAll("svg > *").remove();
 
 // grabbing Shape from instance variables
@@ -22,6 +21,8 @@ d3.select(svg)
     .data(listOfShapes)     // specifies what we are using for our data
     .join("rect")           // this appends a rect for each item in our data specified in the line above
     .attr("x", 0)           // we've seen the rest in exercise 1...
-    .attr("y", 0)           // But this time around, these attr's and styles's are applied to all of the rectangles called myShape
+    .attr("y", 0)           // But this time around, these attr's and styles's are applied to all of the rect's called myShape
     .attr("width", 50)
     .attr("height", 50);
+
+// TODO: grab and print the colors from the model

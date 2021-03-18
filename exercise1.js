@@ -8,6 +8,7 @@
 
 // this clears the svg that Sterling provides to us. 
 // You may want to include this at the top of all of your files!
+// the string passed into selectAll indicates that all (*) children (>) of the svg (svg) should be selected/removed
 d3.selectAll("svg > *").remove();
 
 // declaring some constants so we can easily use color later. This is just vanilla javascript.
@@ -23,10 +24,10 @@ d3.select(svg)              // select the svg
     .attr("y", 10)          // give the rect a y coordinate
     .attr("width", 150)     // give the rect a width
     .attr("height", 100)    // give the rect a height
-    .style("fill", RED);    // give the rect a fill color (RED is declared in line 5)
+    .style("fill", RED);    // give the rect a fill color (RED is declared in line 15)
 
 // A NOTE ON ORDER: in this example, the order of the first two lines of d3 code matters 
 // (the select and append lines) however, we could have specified attributes (attr) 
 // and styles in any order after this.
 
-// TODO: create a green circle (see handout for tips)
+// TODO: create a green circle
