@@ -11,6 +11,7 @@ d3.selectAll("svg > *").remove();
 
 // grabbing Shape from instance variables
 const listOfShapes = Shape.atoms(true);
+// Supplying "true" to atoms will include any atoms of signatures that extend Shape.
 
 // the following code selects the svg, 
 // then selects all of the (to be created) elements called "myShape",
