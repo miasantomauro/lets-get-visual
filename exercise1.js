@@ -8,8 +8,8 @@
 
 // this clears the svg that Sterling provides to us. 
 // You may want to include this at the top of all of your files!
-// the string passed into selectAll indicates that all (*) children (>) of the svg (svg) should be selected/removed
-d3.selectAll("svg > *").remove();
+// this line first selects the svg, then selects all (*) children of it, then removes them.
+d3.select(svg).selectAll("*").remove();
 
 // declaring some constants so we can easily use color later. This is just vanilla javascript.
 const RED = "#E54B4B";

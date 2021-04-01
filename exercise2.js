@@ -7,7 +7,7 @@
 */
 
 // clearing the svg that Sterling provides to us.
-d3.selectAll("svg > *").remove();
+d3.select(svg).selectAll("*").remove();
 
 // grabbing Shape from instance variables
 const listOfShapes = Shape.atoms(true);
